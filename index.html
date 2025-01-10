@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Learn the basics of dynamic web development with Racheal Katono. Explore resources, projects, and more.">
+    <meta name="author" content="Racheal Katono">
+    <title>WDD 131 - Dynamic Web Fundamentals - Racheal Katono</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>rachealkatonowdd131</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Racheal katono<span class="highlight"></span></h1>
+        <nav>
+            
+                <a href="https://www.linkedin.com/in/racheal-katono-72b080345" target="_blank">LinkedIn</a>
+                <a href="https://byupw.instructure.com" target="_blank">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+                <a href="/final-project/">Final Project</a>
+        
+        </nav>
+    </header>
+
+    <main>
+        <div class="card about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Racheal Katono from Uganda. My major is Bachelor of Science in Software Development. I enjoy watching movies and listening to music.</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo-img">
+                </div>
+            </div>
+            
+            <div class="location-info">
+                <h3>Jinja, Uganda</h3>
+                <div class="location-details">
+                    <div class="picture-container">
+                        <img src="images/R.nile-Bridge.jpeg" alt="River Nile Bridge" class="picture-img">
+                        <p class="picture-caption">Bridge on River Nile</p>
+                    </div>
+                    <div class="location-content">
+                        <p>Uganda, the Pearl of Africa, is a haven of natural beauty, rich culture, and incredible wildlife experiences, boasting stunning landscapes, diverse flora and fauna, and the source of the River Nile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card resources-section">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos/" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© <span id="currentyear"></span>| Racheal Katono | Jinja, Uganda</p>
+        <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
 </body>
+
 </html>
