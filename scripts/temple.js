@@ -1,14 +1,22 @@
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("last-modified-date").textContent = document.lastModified;
+// Update the current year dynamically in the footer
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menuToggle");
-    const navMenu = document.getElementById("navMenu");
+// Update the "last modified" date dynamically in the footer
+const lastModifiedElement = document.getElementById("last-modified-date");
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
+}
 
-    menuToggle.addEventListener("click", () => {
+// Get the hamburger button and the navigation menu
+const hamburgerButton = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+// Add click event listener to toggle the menu
+if (hamburgerButton && navMenu) {
+    hamburgerButton.addEventListener("click", () => {
         navMenu.classList.toggle("show");
-
-        // Toggle the symbol for the hamburger button
-        menuToggle.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
     });
-});
+}

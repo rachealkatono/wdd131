@@ -8,20 +8,22 @@ body {
 
 header {
     background-color: #4caf50;
-    color: white;
+    color: rgb(6, 0, 0);
     padding: 1rem;
     text-align: center;
 }
-nav{
+
+nav id {
     display: flex;
-    justify-content: ;
+    justify-content:flex-end;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #4caf50;
+    background-color: #56a858;
 }
 
 .nav-menu {
     display: flex;
+    justify-content:flex-end;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -29,7 +31,7 @@ nav{
 
 .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: rgb(11, 1, 1);
     font-weight: bold;
     padding: 0.5rem 1rem; 
     border-radius: 4px; 
@@ -37,16 +39,17 @@ nav{
 }
 
 .nav-menu a:hover {
-    background-color: #3e8e41;
+    background-color: #56a858;
 }
    
-.hamburger {
-    display: none;
+#hamburger {
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: white;
+    color: #00070c;
     cursor: pointer;
+    outline: none;
+    display: none; 
 }
 
 .nav-menu {
@@ -59,35 +62,22 @@ nav{
 
 .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: rgb(7, 1, 1);
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block; 
     }
 
-    .nav-menu {
+    #navMenu {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #4caf50;
-        width: 200px;
-        padding: 1rem;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-
-    .nav-menu.show {
-        display: flex;
+    #navMenu.show {
+        display: block;
+        flex-direction: column; 
     }
-}
-
-main {
-    padding: 1rem;
 }
 
 .gallery {
@@ -108,8 +98,8 @@ figure {
 }
 
 footer {
-    background-color: #2e7d32;
-    color: white;
+    background-color: #9bec9f;
+    color: rgb(14, 0, 0);
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
