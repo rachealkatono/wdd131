@@ -1,0 +1,12 @@
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburger {
+    display: none;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
