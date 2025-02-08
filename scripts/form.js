@@ -27,14 +27,6 @@ const products = [
     }
   ];
 
-const features = [
-    "Easy to use",
-    "Durable",
-    "Good value",
-    "High quality",
-    "Innovative features",
-    "Great design"
-];
 // Populate Product Name Dropdown
 document.addEventListener("DOMContentLoaded", function() {
     const productSelect = document.getElementById("product");
@@ -45,26 +37,35 @@ document.addEventListener("DOMContentLoaded", function() {
         option.textContent = product.name; // ✅ Displaying product name
         productSelect.appendChild(option);
     });
-    // Populate features
-    const featuresContainer = document.getElementById('featuresContainer');
-    features.forEach(feature => {
-        const div = document.createElement('div');
-        div.className = 'feature-item';
-        
-        const input = document.createElement('input');
-        input.type = 'checkbox';
-        input.id = feature.toLowerCase().replace(/\s+/g, '-');
-        input.name = 'features';
-        input.value = feature;
-
-        const label = document.createElement('label');
-        label.htmlFor = input.id;
-        label.textContent = feature;
-
-        div.appendChild(input);
-        div.appendChild(label);
-        featuresContainer.appendChild(div);
+    document.addEventListener("DOMContentLoaded", function () {
+        const featuresContainer = document.getElementById("featuresContainer");
+    
+        if (!featuresContainer) return; // Prevents error if div is missing
+    
+        const features = [
+            "Easy to use", "Durable", "Good value", "High quality", "Innovative features", "Great design"
+        ];
+    
+        features.forEach(feature => {
+            const div = document.createElement("div");
+            div.className = "feature-item";
+    
+            const input = document.createElement("input");
+            input.type = "checkbox";
+            input.id = feature.toLowerCase().replace(/\s+/g, '-'); // e.g., "easy-to-use"
+            input.name = "features";
+            input.value = feature;
+    
+            const label = document.createElement("label");
+            label.htmlFor = input.id;
+            label.textContent = feature;
+    
+            div.appendChild(input);
+            div.appendChild(label);
+            featuresContainer.appendChild(div);
+        });
     });
+    
 
     // Form submission
     const form = document.getElementById('productReviewForm');
@@ -79,6 +80,16 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('reviewCount', currentCount + 1);
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const installDateInput = document.getElementById("installDate");
+
+    if (installDateInput) {
+        const today = new Date();
+        const formattedDate = today.toISOString().split("T")[0]; // YYYY-MM-DD format
+        installDateInput.value = formattedDate; // Set default value to today
+    }
+});
+
 // Update the current year dynamically in the footer
 const currentYearElement = document.getElementById("currentyear");
 if (currentYearElement) {
