@@ -24,14 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.getElementById('reviewCount').textContent = `Total reviews submitted: ${newCount}`;
 });
-// Update the current year dynamically in the footer
-const currentYearElement = document.getElementById("currentyear");
-if (currentYearElement) {
-    currentYearElement.textContent = new Date().getFullYear();
-}
+// Display current year dynamically
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Update the "last modified" date dynamically in the footer
-const lastModifiedElement = document.getElementById("last-modified-date");
-if (lastModifiedElement) {
-    lastModifiedElement.textContent = document.lastModified;
-}
+// Display last modified date dynamically
+document.getElementById("last-modified-date").textContent = document.lastModified;
