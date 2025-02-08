@@ -67,18 +67,25 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 
-    // Form submission
-    const form = document.getElementById('productReviewForm');
-    form.addEventListener('submit', function(e) {
-        if (!form.checkValidity()) {
-            e.preventDefault();
-            return;
-        }
-        
-        // Increment review counter
-        const currentCount = parseInt(localStorage.getItem('reviewCount') || '0');
-        localStorage.setItem('reviewCount', currentCount + 1);
-    });
+      // Form submission
+      const form = document.getElementById('productReviewForm');
+      form.addEventListener('submit', function(e) {
+          if (!form.checkValidity()) {
+              e.preventDefault();
+              return;
+          }
+          
+          // Increment review counter
+          const currentCount = parseInt(localStorage.getItem('reviewCount') || '0');
+          localStorage.setItem('reviewCount', currentCount + 1);
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentCount = parseInt(localStorage.getItem('reviewCount') || '0');
+    const newCount = currentCount + 1;
+    localStorage.setItem('reviewCount', newCount);
+    
+    document.getElementById('reviewCount').textContent = `Total reviews submitted: ${newCount}`;
 });
 document.addEventListener("DOMContentLoaded", function () {
     const installDateInput = document.getElementById("installDate");
