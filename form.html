@@ -22,6 +22,7 @@
         <p id="reviewCount">Total reviews submitted: 0</p>
         
             <form method="get" action="review.html" id="productReviewForm">
+                </form>
                 <!-- Product Selection -->
                 <div class="form-group">
                     <label for="product">Product Name *</label>
@@ -65,7 +66,9 @@
                             <div class="form-group">
                                 <label>Which features did you find useful in the product? (check all that apply)</label>
                                 <label>(check all that apply)</label>
+                                </div>
                                 <div class="features-grid" id="featuresContainer">
+                                </div>
                                     <div class="feature-item">
                                         <input type="checkbox" id="easy-to-use" name="features" value="Easy to use">
                                         <label for="easy-to-use">Easy to use</label>
@@ -83,15 +86,14 @@
                                         <label for="high-quality">High quality</label>
                                     </div>
                                     <div class="feature-item">
-                                        <input type="checkbox" id="high-quality" name="features" value="High quality">
-                                        <label for="high-quality">Innovative features</label>
+                                        <input type="checkbox" id="innovative-features" name="features" value="Innovative features">
+                                        <label for="innovative-features">Innovative features</label>
                                     </div>
                                     <div class="feature-item">
-                                        <input type="checkbox" id="high-quality" name="features" value="High quality">
-                                        <label for="high-quality">Great design</label>
-                                    </div>
-                                </div>
-                            </div>                             
+                                        <input type="checkbox" id="great-design" name="features" value="Great design">
+                                        <label for="great-design">Great design</label>
+                                    
+                                </div>                                
 
                             <!-- Features will be added here by JavaScript -->
     
@@ -109,12 +111,11 @@
     
                     <!-- Submit Button -->
                     <button type="submit" class="submit-btn">Submit Review</button>
-                </form>
+                    <footer>
+                        <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
+                    <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
+                    </footer>
             </div>
-        <footer>
-            <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
-        <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
-        </footer>
     </div>
 
     <script src="scripts/form.js" defer></script>
