@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="confirmation">
+                <div class="confirmation-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your review has been submitted successfully.</p>
+                <p class="review-count" id="reviewCount"></p>
+                <button onclick="window.location.href='form.html'" class="submit-btn">Submit Another Review</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
+        <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/review.js" defer></script>
+</body>
+</html>

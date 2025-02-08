@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div class="container">
+        
+    <div class="header">
+        <h1>Product Review</h1>
+    </div>
+    
+    <div id="reviewForm" class="form-container">
+        <p id="reviewCount">Total reviews submitted: 0</p>
+        
+            <form method="get" action="review.html" id="productReviewForm">
+                <!-- Product Selection -->
+                <div class="form-group">
+                    <label for="product">Product Name *</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </div>
+
+                  <!-- Rating -->
+                  <div class="form-group">
+                    <label>Overall Rating *</label>
+                    <div class="rating-container">
+                        <div class="rating-option">
+                            <div class="rating-stars">★</div>
+                            <input type="radio" name="rating" value="1" required class="rating-radio" id="rating1">
+                        </div>
+                        <div class="rating-option">
+                            <div class="rating-stars">★★</div>
+                            <input type="radio" name="rating" value="2" required class="rating-radio" id="rating2">
+                        </div>
+                        <div class="rating-option">
+                            <div class="rating-stars">★★★</div>
+                            <input type="radio" name="rating" value="3" required class="rating-radio" id="rating3">
+                        </div>
+                        <div class="rating-option">
+                            <div class="rating-stars">★★★★</div>
+                            <input type="radio" name="rating" value="4" required class="rating-radio" id="rating4">
+                        </div>
+                        <div class="rating-option">
+                            <div class="rating-stars">★★★★★</div>
+                            <input type="radio" name="rating" value="5" required class="rating-radio" id="rating5">
+                        </div>
+                    </div>
+                </div>
+                    <!-- Installation Date -->
+                    <div class="form-group">
+                        <label for="installDate">Date of Installation *</label>
+                        <input type="date" id="installDate" name="installDate" required autocomplete="date">
+                    </div>
+    
+                    <!-- Useful Features -->
+                    <div class="form-group">
+                        <label>Which features did you find useful in the product? (check all that apply)</label>
+                        <label>(check all that apply)</label>
+                        <div id="featuresContainer"></div> 
+                        <div class="features-grid" id="featuresContainer">
+                           
+
+                            <!-- Features will be added here by JavaScript -->
+                        </div>
+                    </div>
+    
+                    <!-- Written Review -->
+                    <div class="form-group">
+                        <label for="review">Written Review (optional)</label>
+                        <textarea id="review" name="review" rows="4" placeholder="Share your experience with this product..." autocomplete="off"></textarea>
+                    </div>
+    
+                    <!-- User Name -->
+                    <div class="form-group">
+                        <label for="userName">Your Name (optional)</label>
+                        <input type="text" id="userName" name="userName" placeholder="Enter your name" autocomplete="name">
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Review</button>
+                </form>
+            </div>
+        <footer>
+            <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
+        <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
+        </footer>
+    </div>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
