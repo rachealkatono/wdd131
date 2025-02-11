@@ -21,105 +21,103 @@
     <div id="reviewForm" class="form-container">
         <p id="reviewCount">Total reviews submitted: 0</p>
         
-            <form method="get" action="review.html" id="productReviewForm">
+        <form method="get" action="review.html" id="productReviewForm">
                 
-                <!-- Product Selection -->
-                <div class="form-group">
-                    <label for="product">Product Name *</label>
-                    <select id="product" name="product" required>
-                        <option value="" disabled selected>Select a Product...</option>
-                    </select>
-                </div>
-
-                  <!-- Rating -->
-                  <div class="form-group">
-                    <label>Overall Rating *</label>
-                    <div class="rating-container">
-                        <div class="rating-option">
-                            <div class="rating-stars">★</div>
-                            <input type="radio" name="rating" value="1" required class="rating-radio" id="rating1">
-                        </div>
-                        <div class="rating-option">
-                            <div class="rating-stars">★★</div>
-                            <input type="radio" name="rating" value="2" required class="rating-radio" id="rating2">
-                        </div>
-                        <div class="rating-option">
-                            <div class="rating-stars">★★★</div>
-                            <input type="radio" name="rating" value="3" required class="rating-radio" id="rating3">
-                        </div>
-                        <div class="rating-option">
-                            <div class="rating-stars">★★★★</div>
-                            <input type="radio" name="rating" value="4" required class="rating-radio" id="rating4">
-                        </div>
-                        <div class="rating-option">
-                            <div class="rating-stars">★★★★★</div>
-                            <input type="radio" name="rating" value="5" required class="rating-radio" id="rating5">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="installDate">Date of Installation *</label>
-                    <input type="date" id="installDate" name="installDate" required>
-                </div>
-                
-                    <!-- Useful Features -->
-                            <div class="form-group">
-                                <label>Which features did you find useful in the product? (check all that apply)</label>
-                                <label>(check all that apply)</label>
-                                </div>
-                                <div class="features-grid" id="featuresContainer">
-                                </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="easy-to-use" name="features" value="Easy to use">
-                                        <label for="easy-to-use">Easy to use</label>
-                                    </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="durable" name="features" value="Durable">
-                                        <label for="durable">Durable</label>
-                                    </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="good-value" name="features" value="Good value">
-                                        <label for="good-value">Good value</label>
-                                    </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="high-quality" name="features" value="High quality">
-                                        <label for="high-quality">High quality</label>
-                                    </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="innovative-features" name="features" value="Innovative features">
-                                        <label for="innovative-features">Innovative features</label>
-                                    </div>
-                                    <div class="feature-item">
-                                        <input type="checkbox" id="great-design" name="features" value="Great design">
-                                        <label for="great-design">Great design</label>
-                                    
-                                </div>                                
-
-                            <!-- Features will be added here by JavaScript -->
-    
-                    <!-- Written Review -->
-                    <div class="form-group">
-                        <label for="review">Written Review (optional)</label>
-                        <textarea id="review" name="review" rows="4" placeholder="Share your experience with this product..." autocomplete="off"></textarea>
-                    </div>
-    
-                    <!-- User Name -->
-                    <div class="form-group">
-                        <label for="userName">Your Name (optional)</label>
-                        <input type="text" id="userName" name="userName" placeholder="Enter your name" autocomplete="name">
-                    </div>
-    
-                    <!-- Submit Button -->
-                    <button type="submit" class="submit-btn">Submit Review</button>
-                </form>
-                
-                 <footer>
-                        <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
-                    <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
-                    </footer>
+            <!-- Product Selection -->
+            <div class="form-group">
+                <label for="product">Product Name <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
             </div>
-    </div>
 
-    <script src="scripts/form.js" defer></script>
+            <!-- Rating -->
+            <div class="form-group">
+                <label>Overall Rating <span class="required">*</span></label>
+                <div class="rating-container">
+                    <div class="rating-option">
+                        <div class="rating-stars">★</div>
+                        <input type="radio" name="rating" value="1" required class="rating-radio" id="rating1">
+                    </div>
+                    <div class="rating-option">
+                        <div class="rating-stars">★★</div>
+                        <input type="radio" name="rating" value="2" required class="rating-radio" id="rating2">
+                    </div>
+                    <div class="rating-option">
+                        <div class="rating-stars">★★★</div>
+                        <input type="radio" name="rating" value="3" required class="rating-radio" id="rating3">
+                    </div>
+                    <div class="rating-option">
+                        <div class="rating-stars">★★★★</div>
+                        <input type="radio" name="rating" value="4" required class="rating-radio" id="rating4">
+                    </div>
+                    <div class="rating-option">
+                        <div class="rating-stars">★★★★★</div>
+                        <input type="radio" name="rating" value="5" required class="rating-radio" id="rating5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date of Installation -->
+            <div class="form-group">
+                <label for="installDate">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <!-- Useful Features -->
+            <div class="form-group">
+                <label>Which features did you find useful in the product? (check all that apply)</label>
+                <div class="features-grid" id="featuresContainer">
+                    <div class="feature-item">
+                        <input type="checkbox" id="easy-to-use" name="features" value="Easy to use" required>
+                        <label for="easy-to-use">Easy to use</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="durable" name="features" value="Durable" required>
+                        <label for="durable">Durable</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="good-value" name="features" value="Good value" required>
+                        <label for="good-value">Good value</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="high-quality" name="features" value="High quality" required>
+                        <label for="high-quality">High quality</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="innovative-features" name="features" value="Innovative features" required>
+                        <label for="innovative-features">Innovative features</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="great-design" name="features" value="Great design" required>
+                        <label for="great-design">Great design</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Written Review -->
+            <div class="form-group">
+                <label for="review">Written Review <span class="required">*</span></label>
+                <textarea id="review" name="review" rows="4" placeholder="Share your experience with this product..." autocomplete="off" required></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="form-group">
+                <label for="userName">Your Name <span class="required">*</span></label>
+                <input type="text" id="userName" name="userName" placeholder="Enter your name" autocomplete="name" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+                
+        <footer>
+            <p>© <span id="currentyear"></span>| Racheal Katono | Mukono, Uganda</p>
+            <p id="lastModified" class="header-highlight">Last Modified: <span id="last-modified-date"></span></p>
+        </footer>
+    </div>
+</div>
+
+<script src="scripts/form.js" defer></script>
 </body>
 </html>

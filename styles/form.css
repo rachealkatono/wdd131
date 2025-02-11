@@ -82,6 +82,17 @@ textarea:focus {
     border-color: rgb(59, 130, 246);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
+/* Style for required fields */
+.required {
+    color: #431704;
+    font-weight: bold;
+}
+
+/* Style for highlighting required inputs */
+input:required, select:required {
+    border: 2px solid #5c09e1;
+}
+
 
 /* Rating System */
 .rating-container {
