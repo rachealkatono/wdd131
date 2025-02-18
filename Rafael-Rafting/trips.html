@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the thrill of whitewater rafting with Rafael Rafting! Explore breathtaking trips, expert-guided adventures, and book your next unforgettable journey today.">
+    <meta name="author" content="Rachealkatono">
+    <meta name="keywords" content="rafting, adventure, whitewater rafting, Nile River, guided tours">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Ride the Rapids, Create Epic Memories</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <button id="hamburger">☰</button>
+            <div id="navMenu" class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="trips.html">Trips</a>
+                <a href="about-us.html">About Us</a>
+                <a href="book.html">Book a Trip</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ride the Rapids, Create Epic Memories</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <h3> From Calm Currents to Wild Waves – Pick Your Adventure!</h3>
+                <p>Our trips offer a variety of experiences tailored to all levels of adventurers. From thrilling rapids to serene scenic tours, there's something for everyone. With expert guides and stunning natural beauty, you’re sure to have an unforgettable journey on the Nile. Whether you're looking for excitement or relaxation, Rafael Rafting ensures every trip is memorable</p>
+                <a href="book.html" class="cta-button">BOOK NOW</a>
+            </div>
+        </section>
+
+            <!-- Filtering Section -->
+            
+            <section class="filters">
+                <h4>Filters</h4>
+                <label for="difficulty-filter">Filter by Difficulty:</label>
+                <select id="difficulty-filter">
+                    <option value="">All</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Expert">Expert</option>
+                </select>
+    
+                <input type="text" id="trip-search" placeholder="Search for a trip...">
+            </section>
+    
+            <!-- Trips Grid -->
+            <section id="trip-grid" class="trip-grid">
+                <h4>Trips</h4>
+                <!-- JavaScript dynamically loads trips here -->
+            </section>
+    
+            <!-- Trips Information Table -->
+            <section class="trip-table-section">
+                <h2>Trip Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trip-table-body">
+                        <!-- JavaScript dynamically loads trips here -->
+                    </tbody>
+                </table>
+            </section>
+    
+        </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <h3>CONNECT</h3>
+            <a href="https://www.facebook.com/login"><img src="images/facebook.svg" alt="Follow us on Facebook" loading="lazy">Follow us on Facebook</a>
+            <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter" loading="lazy">Twitter</a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" loading="lazy">Instagram</a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt=" chat on WhatsApp" loading="lazy">chat on WhatsApp</a>
+        </div>
+        <div class="footer-info">
+            <p>Email: <a href="mailto:info@rafaelrafting.com">info@rafaelrafting.com</a></p>
+            <p>Kampala, Uganda</p>
+            <p>Phone: +256-762665702</p>
+            <p>Fax: +256-758522388</p>
+        </div>
+        <div class="footer-links">
+            <h3>LINKS</h3>
+            <a href="trips.html">Trips</a>
+            <a href="about-us.html">About Us</a>
+            <a href="book.html">Book a Trip</a>
+        </div>
+        <p><a href="references.html">Reference Page</a></p>
+    </footer>
+    <script defer src="scripts/trips.js"></script>
+</body>
+</html>

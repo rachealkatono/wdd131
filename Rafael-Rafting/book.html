@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your next whitewater rafting adventure with Rafael Rafting. Secure your spot today with our easy online booking system and get ready for an unforgettable experience!">
+    <meta name="author" content="Rachealkatono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Book your next whitewater rafting adventure with Rafael Rafting.</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <button id="hamburger">☰</button>
+            <div id="navMenu" class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="trips.html">Trips</a>
+                <a href="about-us.html">About Us</a>
+                <a href="book.html">Book a Trip</a>
+               
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Book your next whitewater rafting adventure with Rafael Rafting.</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Don't Just Dream It—Raft It! Book Now!</h2>
+            <p>Ready for your next adventure? Book your rafting trip with ease! Simply fill out our booking form with your details, select your trip, and secure your spot. Don’t wait – your rafting experience is just a few clicks away.</p>
+                <a href="about-us.html" class="cta-button">Know More About Us</a>
+            </div>
+        </section>
+         <!-- Booking Form Section -->
+         <section id="booking">
+            <h2>Book Your Rafting Adventure</h2>
+            <form id="booking-form">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}"  required>
+
+                <label for="trip">Select Your Trip:</label>
+                <select id="trip" name="trip">
+                    <option value="Choose a Trip" selected disabled>Choose a Trip</option>  
+                    <option value="River Rush">River Rush</option>
+                    <option value="Extreme Rapids">Extreme Rapids</option>
+                    <option value="Family Fun Float">Family Fun Float</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="requests">Special Requests / Questions:</label>
+                <textarea id="requests" name="requests" rows="4"></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>📍 Location:</strong> 123 Kampala-Jinja Road, Adventure City</p>
+            <p><strong>📞 Phone:</strong> +256 762 665 702</p>
+            <p><strong>📧 Email:</strong> contact@rafaelrafting.com</p>
+            <a href="https://wa.me/+256762665702" class="whatsapp-button">📱 Chat on WhatsApp</a>
+        </section>
+
+       
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <h3>CONNECT</h3>
+            <a href="https://www.facebook.com/login"><img src="images/facebook.svg" alt="Follow us on Facebook" loading="lazy">Follow us on Facebook</a>
+            <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter" loading="lazy">Twitter</a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" loading="lazy">Instagram</a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt=" chat on WhatsApp" loading="lazy">chat on WhatsApp</a>
+        </div>
+        <div class="footer-info">
+            <p>Email: <a href="mailto:info@rafaelrafting.com">info@rafaelrafting.com</a></p>
+            <p>Kampala, Uganda</p>
+            <p>Phone: +256-762665702</p>
+            <p>Fax: +256-758522388</p>
+        </div>
+        <div class="footer-links">
+            <h3>LINKS</h3>
+            <a href="trips.html">Trips</a>
+            <a href="about-us.html">About Us</a>
+            <a href="book.html">Book a Trip</a>
+        </div>
+        <p><a href="references.html">Reference Page</a></p>
+    </footer>
+    <script src="scripts/book.js" defer></script>
+</body>
+</html>

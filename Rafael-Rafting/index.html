@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the thrill of whitewater rafting with Rafael Rafting! Explore breathtaking trips, expert-guided adventures, and book your next unforgettable journey today.">
+    <meta name="author" content="Rachealkatono">
+    <meta name="keywords" content="rafting, adventure, whitewater rafting, Nile River, guided tours">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Welcome to Rafael Rafting – Ride the Rapids, Feel the Rush!</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <button id="hamburger">☰</button>
+            <div id="navMenu" class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="trips.html">Trips</a>
+                <a href="about-us.html">About Us</a>
+                <a href="book.html">Book a Trip</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Rafael Rafting – Ride the Rapids, Feel the Rush!</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Beyond the Riverbanks – Where Every Wave Tells a Story!</h2>
+                <a href="trips.html" class="cta-button">View Trips</a>
+                <p>Welcome to Rafael Rafting! Dive into the ultimate whitewater rafting adventure. Discover breathtaking trips, expert guides, and thrilling rapids. Ready to make memories that last a lifetime? Start your journey here!</p>
+            </div>
+        </section>
+
+        <!-- Featured Trips Section -->
+        <section class="featured-tours">
+            <h3>Featured Trips</h3>
+            <div class="tour-grid" id="tour-grid">
+                <!-- JavaScript dynamically rotates featured trips -->
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h3>Testimonials</h3>
+            <div id="testimonial-slider">
+                <img id="testimonial-image" src="images/" alt="Client testimonial">
+                <p id="testimonial-text"></p>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+         <!-- Why Choose Us Section -->
+         <section class="why-choose-us">
+            <h3>Why Choose Us?</h3>
+            <div class="features">
+                <div class="feature"><img src="images/guide.svg" alt="Guide" loading="lazy">
+                    <p>🛶 Expert Guides – Certified professionals ensure safety.</p></div>
+                <div class="feature"><img src="images/rapids.svg" alt="Rapids" loading="lazy">
+                    <p>🌊 Thrilling Rapids – Choose from beginner to extreme levels.</p></div>
+                <div class="feature"><img src="images/schedule.svg" alt="Schedule" loading="lazy">
+                    <p>⏳ Flexible Scheduling – Trips run throughout the season.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <h3>CONNECT</h3>
+            <a href="https://www.facebook.com/login"><img src="images/facebook.svg" alt="Follow us on Facebook" loading="lazy">Follow us on Facebook</a>
+            <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter" loading="lazy">Twitter</a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" loading="lazy">Instagram</a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt=" chat on WhatsApp" loading="lazy">chat on WhatsApp</a>
+        </div>
+        <div class="footer-info">
+            <p>Email: <a href="mailto:info@rafaelrafting.com">info@rafaelrafting.com</a></p>
+            <p>Kampala, Uganda</p>
+            <p>Phone: +256-762665702</p>
+            <p>Fax: +256-758522388</p>
+        </div>
+        <div class="footer-links">
+            <h3>LINKS</h3>
+            <a href="trips.html">Trips</a>
+            <a href="about-us.html">About Us</a>
+            <a href="book.html">Book a Trip</a>
+        </div>
+        <p><a href="references.html">Reference Page</a></p>
+    </footer>
+    <script defer src="scripts/index.js"></script>
+</body>
+</html>
